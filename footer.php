@@ -6,7 +6,7 @@
  *
  * @package frc Theme
  */
-$footer = get_field('footer');
+$footer = get_field('footer', 'option');
 ?>
 <footer>
     <div class="container">

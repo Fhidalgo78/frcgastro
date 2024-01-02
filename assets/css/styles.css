@@ -1,15 +1,16 @@
 @font-face {
     font-family: 'bogleregular';
     src: url('../fonts/bogleregular/bogleregular-webfont.woff2') format('woff2'),
-         url('../fonts/bogleregular/bogleregular-webfont.woff') format('woff');
+        url('../fonts/bogleregular/bogleregular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'boglebold_italic';
     src: url('../fonts/boglebolditalic/boglebolditalic-webfont.woff2') format('woff2'),
-         url('../fonts/boglebolditalic/boglebolditalic-webfont.woff') format('woff');
+        url('../fonts/boglebolditalic/boglebolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,7 +19,7 @@
 @font-face {
     font-family: 'boglebold';
     src: url('../fonts/boglebold/boglebold-webfont.woff2') format('woff2'),
-         url('../fonts/boglebold/boglebold-webfont.woff') format('woff');
+        url('../fonts/boglebold/boglebold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,39 +28,48 @@
 @font-face {
     font-family: 'bogleblack_italic';
     src: url('../fonts/bogleblackitalic/bogleblackitalic-webfont.woff2') format('woff2'),
-         url('../fonts/bogleblackitalic/bogleblackitalic-webfont.woff') format('woff');
+        url('../fonts/bogleblackitalic/bogleblackitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-#menu-main-menu li:last-child, #menu-main-menu-1 li:last-child {
+#menu-main-menu li:last-child,
+#menu-main-menu-1 li:last-child {
     display: none;
 }
+
 #masthead.bgactive {
     box-shadow: 6px 0px 39px -13px rgb(0 0 0 / 75%);
     background: #fff;
     backdrop-filter: blur(5px);
     padding: 10px 0;
 }
+
 #masthead.bgactive #menu-main-menu li a {
     color: #0c5a8d;
     font-size: 1rem;
 }
+
 #masthead.bgactive #menu-main-menu li a:hover {
     color: #4f98c8;
 }
+
 header #menu-main-menu li a:hover {
     color: #c0dfff;
 }
+
 #masthead.bgactive .wrappernavbar {
     margin-top: 31px;
 }
+
 #masthead.bgactive .custom-logo {
     max-width: 200px;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 #first-section {
     height: 100vh;
     background-size: cover;
@@ -69,33 +79,39 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
 header {
     transition: .3s all linear;
     position: fixed;
     width: 100%;
     left: 0;
     top: 0;
-    padding-top: 55px;
+    /* padding-top: 55px; */
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 99;
 }
+
 header #menu-main-menu li a {
     font-family: 'boglebold';
     color: #fff;
     font-size: 1.1rem;
 }
+
 .fieldset-cf7mls-wrapper .wpcf7-not-valid-tip {
     display: none;
 }
+
 .wpcf7-not-valid {
     border: solid 1px #bc3636;
 }
+
 .fieldset-cf7mls-wrapper div.wpcf7-validation-errors {
     color: #bc3636;
     border: none;
 }
+
 .maintitle h2 {
     font-family: 'boglebold_italic';
     text-transform: uppercase;
@@ -104,9 +120,11 @@ header #menu-main-menu li a {
     line-height: 1;
     margin: 0;
 }
+
 .maintitle h2 span {
     font-size: 5rem;
 }
+
 .custom-logo {
     transition: 1s all linear;
     max-width: 260px;
@@ -127,30 +145,34 @@ header #menu-main-menu li a {
     position: absolute;
     display: inline-block;
 }
-.wrappernavbar  {
+
+.wrappernavbar {
     margin-left: 35px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
+
 #second-section {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
 }
-.secondtitle h2{
+
+.secondtitle h2 {
     font-family: 'boglebold';
     width: fit-content;
     border: solid 2px #b8b8b861;
     margin: auto;
     border-radius: 20px;
-    padding: 20px 85px;
+    padding: 20px 35px;
     color: #13a298;
     text-transform: uppercase;
     position: relative;
-    top: -54px;
     background: white;
     box-shadow: -1px 1px 12px -8px rgb(0 0 0 / 75%);
     font-size: 1.5rem;
+    z-index: 99;
 }
+
 .feature-box {
     border: solid 2px #b8b8b861;
     box-shadow: -1px 1px 12px -8px rgb(0 0 0 / 75%);
@@ -162,6 +184,7 @@ header #menu-main-menu li a {
     padding: 15px;
     background-color: white;
 }
+
 .feature-box p {
     font-family: 'bogleregular';
     color: #1d1d1b;
@@ -169,6 +192,7 @@ header #menu-main-menu li a {
     word-break: break-word;
     text-align: justify;
 }
+
 .feature-title {
     display: flex;
     justify-content: space-around;
@@ -177,9 +201,11 @@ header #menu-main-menu li a {
     width: 100%;
     margin-bottom: 15px;
 }
+
 .feature-title img {
     max-width: 50px;
 }
+
 .feature-title h3 {
     font-family: 'boglebold';
     color: #13a298;
@@ -188,6 +214,7 @@ header #menu-main-menu li a {
     line-height: 1;
     margin: 0px;
 }
+
 .steps-box {
     background-position: center;
     background-size: cover;
@@ -198,36 +225,44 @@ header #menu-main-menu li a {
     margin: 40px 0 90px 0;
     box-shadow: -1px 1px 12px -8px rgb(0 0 0 / 75%);
 }
+
 .steps-box h3 {
     font-family: 'bogleblack_italic';
     color: #fff;
     text-transform: uppercase;
     font-size: 1.5rem;
 }
+
 .steps-box h3 span {
     text-transform: uppercase;
     font-size: 3rem;
 }
+
 .steps-box .step {
     color: #fff;
 }
+
 .steps-box .step span {
     font-family: 'bogleblack_italic';
     font-weight: bold;
 }
+
 .steps-box .step p {
     font-family: 'bogleregular';
     margin-bottom: 0px;
 }
+
 .steps-last-title {
     position: relative;
     padding-bottom: 25px;
 }
-.steps-last-title h2{
+
+.steps-last-title h2 {
     font-family: 'boglebold';
     color: #0c5a8d;
     position: relative;
 }
+
 .steps-last-title:after {
     content: "";
     width: 185px;
@@ -241,11 +276,13 @@ header #menu-main-menu li a {
     margin: auto;
     border-radius: 10px;
 }
+
 .box-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .box {
     box-shadow: -1px 1px 12px -8px rgb(0 0 0 / 75%);
     border: solid 2px #b8b8b861;
@@ -259,46 +296,56 @@ header #menu-main-menu li a {
     margin: 0 30px;
     min-height: 202px;
 }
+
 .box img {
     max-width: 70px;
     margin-bottom: 20px;
 }
+
 .box h5 {
-    font-family: 'boglebold'!important;
-    color: #0c5a8d!important;
+    font-family: 'boglebold' !important;
+    color: #0c5a8d !important;
     font-size: 1rem;
     text-transform: uppercase;
-    margin-bottom: 0px!important;
+    margin-bottom: 0px !important;
 }
+
 #tirth-section {
     padding: 30px 0 65px 0;
 }
+
 #tirth-section h4 {
     font-family: 'boglebold';
     margin-bottom: 20px;
     color: #1d1d1b;
 }
+
 #tirth-section h5 {
     color: #1d1d1b;
     font-family: 'bogleregular';
     margin-bottom: 45px;
 }
+
 #fourt-section {
     padding: 70px 0 60px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.formtitle h2{
+
+.formtitle h2 {
     color: #13a298;
     font-family: 'boglebold';
     text-transform: uppercase;
 }
-.formtitle h3{
+
+.formtitle h3 {
     color: #0c5a8d;
     font-family: 'boglebold_italic';
 }
-input, select {
+
+input,
+select {
     font-family: 'bogleregular';
     width: 100%;
     background-color: #e8e8e8;
@@ -308,80 +355,102 @@ input, select {
     margin: 10px 0;
     box-shadow: -1px 1px 12px -8px rgb(0 0 0 / 75%);
 }
+
 select {
-	color: #808080;
+    color: #808080;
 }
+
 input::placeholder {
     font-family: 'bogleregular';
     color: #808080;
 }
-form.cf7mls input.wpcf7-form-control.wpcf7-submit, .cf7mls-btns .cf7mls_next.action-button {
+
+form.cf7mls input.wpcf7-form-control.wpcf7-submit,
+.cf7mls-btns .cf7mls_next.action-button {
     font-family: 'bogleregular';
-    background-color: #13a298!important;
-    color: #fff!important;
+    background-color: #13a298 !important;
+    color: #fff !important;
     box-shadow: -1px 1px 12px -8px rgb(0 0 0 / 75%);
 }
+
 .wpcf7 {
     max-width: 60%;
     margin: auto;
 }
+
 footer {
     background-color: #02598f;
     padding: 20px 0;
 }
+
 footer img {
     max-width: 100px;
 }
+
 .info {
     margin-left: 20px;
 }
-.info, .info a {
+
+.info,
+.info a {
     font-family: 'bogleregular';
     color: #fff;
 }
-footer ul li a, footer ul li a:hover{
+
+footer ul li a,
+footer ul li a:hover {
     color: #fff;
 }
+
 .info a i {
     margin-right: 10px;
 }
+
 footer h5 {
     font-family: 'boglebold';
     font-size: 1rem;
 }
 
-  .success-wrapper img{
-        width: 100%;
-        max-width: 220px;
-        margin: 40px 0;
-  }
-  .success-wrapper h2 {
+.success-wrapper img {
+    width: 100%;
+    max-width: 220px;
+    margin: 40px 0;
+}
+
+.success-wrapper h2 {
     color: #1d1d1b;
     font-family: 'bogleregular';
-  }
-.lastpart {
-	padding: 0 10%;
-	    margin: auto;
 }
+
+.lastpart {
+    padding: 0 10%;
+    margin: auto;
+}
+
 .lastpart div p {
-	    display: flex;
+    display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #menu-main-menu li:last-child, #menu-main-menu-1 li:last-child {
+
+    #menu-main-menu li:last-child,
+    #menu-main-menu-1 li:last-child {
         display: block;
     }
+
     #masthead.bgactive #menu-main-menu li a {
         color: #fff;
     }
+
     #main-menu-wrapper {
-        height: 100vh!important;
+        height: 100vh !important;
         transition: .7s all linear;
         display: block;
         position: fixed;
@@ -392,93 +461,113 @@ footer h5 {
         padding: 20px;
         box-shadow: 6px 0px 39px -13px rgb(0 0 0 / 75%);
     }
+
     #main-menu-wrapper.open {
         right: 0px;
     }
+
     .navbar {
         justify-content: flex-end;
     }
+
     #masthead.bgactive .navbar-light .navbar-toggler i {
         color: #02598f;
     }
+
     #masthead.bgactive .custom-logo {
         max-width: 180px;
     }
+
     header {
-        padding-top: 20px;
+        /* padding-top: 20px; */
     }
+
     #masthead.bgactive .wrappernavbar {
         margin-top: 25px;
     }
-    .navbar-light .navbar-toggler i{
-        color: #fff;
+
+    .navbar-light .navbar-toggler i {
+        color: #000000;
         font-size: 3rem;
         border: none;
         border-color: transparent;
     }
+
     .navbar-toggler {
         border: none;
         border-color: transparent;
     }
+
     .feature-box {
         margin-bottom: 20px;
         min-height: 90%
     }
+
     .steps-box {
         width: 85%;
     }
+
     .box {
         width: 29%;
         margin: 10px;
     }
+
     .box h5 {
         font-size: 16px;
     }
+
     .wpcf7 {
         max-width: 100%;
     }
-  }
+}
 
-  /* 
+/* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
+
     .feature-box {
         min-height: 225px;
     }
+
     .custom-logo:after {
         right: 92%;
     }
-  }
+}
 
-  /* 
+/* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-	.lastpart {
-		padding: 0;
-	}
-	.lastpart span {
-		font-size: 11px;
-    	text-align: left;
-	}
-	.success-wrapper h2 {
-		font-size: 1.3rem;
-		padding: 0 26px;
-	}
+    .lastpart {
+        padding: 0;
+    }
+
+    .lastpart span {
+        font-size: 11px;
+        text-align: left;
+    }
+
+    .success-wrapper h2 {
+        font-size: 1.3rem;
+        padding: 0 26px;
+    }
+
     #masthead.bgactive #menu-main-menu li a {
         color: #fff;
     }
-    #menu-main-menu li:last-child, #menu-main-menu-1 li:last-child {
+
+    #menu-main-menu li:last-child,
+    #menu-main-menu-1 li:last-child {
         display: block;
     }
+
     #main-menu-wrapper {
-        height: 100vh!important;
+        height: 100vh !important;
         transition: .7s all linear;
         display: block;
         position: fixed;
@@ -489,79 +578,100 @@ footer h5 {
         padding: 20px;
         box-shadow: 6px 0px 39px -13px rgb(0 0 0 / 75%);
     }
+
     #main-menu-wrapper.open {
         right: 0px;
     }
+
     .navbar {
         justify-content: flex-end;
     }
+
     #masthead.bgactive .navbar-light .navbar-toggler i {
         color: #02598f;
     }
+
     #masthead.bgactive .custom-logo {
         max-width: 180px;
     }
+
     header {
         padding-top: 20px;
     }
+
     #masthead.bgactive .wrappernavbar {
         margin-top: 25px;
     }
-    .navbar-light .navbar-toggler i{
-        color: #fff;
+
+    .navbar-light .navbar-toggler i {
+        color: #000000;
         font-size: 2.5rem;
         border: none;
         border-color: transparent;
     }
+
     .navbar-toggler {
         border: none;
         border-color: transparent;
     }
+
     .custom-logo {
         max-width: 170px;
     }
+
     .maintitle h2 {
         font-size: 2rem;
     }
+
     .maintitle h2 span {
         font-size: 3rem;
     }
+
     .secondtitle h2 {
         font-size: 19px;
         padding: 20px 15px;
     }
+
     .feature-box {
         min-height: 90%;
         width: 90%;
         margin: 20px auto;
     }
+
     .steps-box {
         width: 90%;
     }
+
     .steps-box .step {
         text-align: center;
     }
+
     .steps-last-title h2 {
         font-size: 1.5rem;
     }
+
     .box {
         min-height: 100%;
         width: 100%;
         margin-bottom: 20px;
     }
+
     .box-wrapper {
         flex-wrap: wrap;
     }
+
     #tirth-section {
         padding: 30px 0 42px 0;
     }
+
     .wpcf7 {
         max-width: 100%;
     }
-    footer ul li a{
+
+    footer ul li a {
         font-size: 14px;
     }
-  }
+}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -569,63 +679,101 @@ footer h5 {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .lastpart {
-		padding: 0;
-	}
-	.lastpart span {
-		font-size: 11px;
-    	text-align: left;
-	}
-.custom-logo {
-    max-width: 155px;
-}
-   #masthead.bgactive .navbar-light .navbar-toggler i {
+    .lastpart {
+        padding: 0;
+    }
+
+    .lastpart span {
+        font-size: 11px;
+        text-align: left;
+    }
+
+    .custom-logo {
+        max-width: 155px;
+    }
+
+    #masthead.bgactive .navbar-light .navbar-toggler i {
         color: #02598f;
     }
+
     #masthead.bgactive .custom-logo {
         max-width: 180px;
     }
+
     header {
         padding-top: 20px;
     }
+
     #masthead.bgactive .wrappernavbar {
         margin-top: 25px;
     }
-    .navbar-light .navbar-toggler i{
-        color: #fff;
+
+    .navbar-light .navbar-toggler i {
+        color: #000000;
         font-size: 2.5rem;
         border: none;
         border-color: transparent;
     }
+
     .navbar-toggler {
         border: none;
         border-color: transparent;
     }
-	.feature-box {
-		min-height: 90%;
-		margin-bottom: 20px;
-	}
-	.steps-box {
-		width: 100%;
-	}
-	.box {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-	.box-wrapper {
-		flex-wrap: wrap;
-	}
-}
-#moreservices {
-	background: #13a298;
-    color: white;
-	padding: 20px 0;
-	font-size: 20px;
-}
-#moreservices a {
-	color: white;
-}
-#moreservices a i {
-	margin-right: 15px;
+
+    .feature-box {
+        min-height: 90%;
+        margin-bottom: 20px;
+    }
+
+    .steps-box {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .box-wrapper {
+        flex-wrap: wrap;
+    }
 }
 
+#moreservices {
+    background: #13a298;
+    color: white;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+#moreservices a {
+    color: white;
+}
+
+#moreservices a i {
+    margin-right: 15px;
+}
+
+
+@media (max-width: 1024px) {
+
+    #main-menu-wrapper {
+        height: 100vh !important;
+        transition: .7s all linear;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -1000px;
+        background: #0c5a93;
+        width: 50%;
+        padding: 20px;
+        box-shadow: 6px 0px 39px -13px rgb(0 0 0 / 75%);
+    }
+    #main-menu-wrapper.open {
+        right: 0px;
+    }
+
+    .wrappernavbar .open li.nav-item a{
+        color: #fff;
+    }
+}

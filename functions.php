@@ -108,7 +108,8 @@ add_action('widgets_init', 'frc_widgets_init');
 
 function frc_scripts()
 {
-    wp_enqueue_style('style', get_stylesheet_uri());
+    //wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('styles2', get_template_directory_uri() . '/assets/css/styles2.css', array(), __VERSION__);
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), __VERSION__);
     wp_enqueue_style('load-fa', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css');
     wp_enqueue_style('styles', get_template_directory_uri() . '/assets/css/styles.css', array(), __VERSION__);
@@ -131,6 +132,7 @@ function scm_ajax_enqueue_scripts()
     wp_enqueue_script('App', get_template_directory_uri() . '/assets/js/App.js', array(
         'jquery'
     ), __VERSION__, true);
+    wp_enqueue_script('font-awesome-kit', 'https://kit.fontawesome.com/9ef348d7e0.js', array(), null, true);
 }
 
 function load_animate_css()
@@ -274,3 +276,19 @@ $headers = array(
         
     }
 }
+
+
+if ( function_exists( 'acf_add_options_page' ) ) {
+    
+    acf_add_options_page(array(
+        'page_title' 	=> 'Configuración General',
+        'menu_title'	=> 'Configuración General',
+        'menu_slug' 	=> 'configuracion-general',
+        'capability'	=> 'edit_posts',
+        'redirect'		=> false
+    ));
+    
+}
+
+// Desactivar barra de admin en login
+add_filter( 'show_admin_bar', '__return_false' );
