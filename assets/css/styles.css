@@ -93,10 +93,11 @@ header {
     z-index: 99;
 }
 
-header #menu-main-menu li a {
+.site-header .navbar .wrappernavbar ul li a {
     font-family: 'boglebold';
-    color: #fff;
+    color: #104b8a;
     font-size: 1.1rem;
+    text-transform: capitalize;
 }
 
 .fieldset-cf7mls-wrapper .wpcf7-not-valid-tip {
@@ -178,6 +179,7 @@ header #menu-main-menu li a {
     box-shadow: -1px 1px 12px -8px rgb(0 0 0 / 75%);
     border-radius: 20px;
     min-height: 231px;
+    max-height: 231px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,6 +402,7 @@ footer img {
 footer ul li a,
 footer ul li a:hover {
     color: #fff;
+    text-transform: capitalize;
 }
 
 .info a i {
@@ -773,7 +776,7 @@ footer h5 {
         right: 0px;
     }
 
-    .wrappernavbar .open li.nav-item a{
+    header nav .wrappernavbar .open ul li.nav-item a{
         color: #fff;
     }
 }

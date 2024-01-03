@@ -9,24 +9,22 @@ $third_title = get_field('third_title');
 $info_div = get_field('info_div');
 $doc_info = get_field('doc_info');
 
-$middle_banner = get_field('m-banner');
+$middle_banner = get_field('middle_banner');
 
-$section2 = get_field('segunda_seccion');
+$section2 = get_field('beneficios');
+$benefits = get_field('maintitle');
 ?>
 
-<section id="home-banner">
+<section id="home-banner" class="mb-2">
     <div class="bg-home-banner container-fluid " style="background-image: url(<?php echo $bg_image; ?>">
-        <div class="container">
+        <div class="container position-relative">
             <div class="row d-none d-lg-flex ">
                 <div class="col-9">
 
                 </div>
                 <div class="col-3">
                     <div class="agenda-cita mt-3 ">
-                        <h5 class="green-title ml-1 ">Agenda tu cita</h5>
-                        <div class="phone-icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
+                        <h5 class="green-title">Agenda tu cita</h5>
                     </div>
                 </div>
             </div>
@@ -52,13 +50,16 @@ $section2 = get_field('segunda_seccion');
                 </h3>
             </div>
 
+            <div class="phone-icon d-none d-lg-flex">
+            <img class="image-wa" src="<?php echo get_template_directory_uri(); ?>/assets/images/2x/wa-ico@2x.png"/>
+            </div>
 
         </div>
     </div>
 </section>
 
 
-<section id="info-section">
+<section id="info-section" class="mb-4">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-12  mx-auto">
@@ -87,20 +88,18 @@ $section2 = get_field('segunda_seccion');
 
 
 
-<section id="middle-page">
+<section id="middle-page" class="mb-4">
     <div class="container-fluid bg-home-banner" style="background-image: url(<?php echo $middle_banner['image'] ?>)">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex flex-column mx-auto my-auto w-50 text-middle">
-                        <h3>
-                            <?php echo $middle_banner['primer-titulo'] ?>
-                        </h3>
+        <div class="row h-100 ">
+            <div class="col-12">
+                <div class="d-flex flex-column mx-auto text-middle h-100 justify-content-center ">
+                    <h3>
+                        <?php echo $middle_banner['primer-titulo'] ?>
+                    </h3>
 
-                        <h3>
-                            <?php echo $middle_banner['segundo-titulo'] ?>
-                        </h3>
-                    </div>
+                    <h3>
+                        <?php echo $middle_banner['segundo-titulo'] ?>
+                    </h3>
                 </div>
             </div>
 </section>
@@ -108,16 +107,16 @@ $section2 = get_field('segunda_seccion');
 
 
 
-<section id="second-section"
+<section class="mb-4" id="second-section"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/2x/bg2.png');">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 info-title blue-title text-center">
-                <?php echo $section2['maintitle']; ?>
+            <div class="col-lg-12 info-title blue-title text-center my-2 font-weight-bold" >
+                <?php echo $benefits ?>
             </div>
         </div>
         <div class="row mb-2">
-            <?php foreach ($section2['beneficios'] as $i => $ben): ?>
+            <?php foreach ($section2 as $i => $ben): ?>
                 <div class="col-md-6 col-lg-3">
                     <div class="feature-box">
                         <div class="feature-title">
@@ -140,7 +139,7 @@ $section2 = get_field('segunda_seccion');
 </section>
 
 
-<section id="doc-info">
+<section id="doc-info" class="mb-4">
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-md-6 col-12  mx-auto">

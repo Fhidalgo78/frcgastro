@@ -15,19 +15,17 @@ $proceso3 = get_field('tercer_proceso');
 
 <section id="gastro-banner">
     <div class="bg-home-banner container-fluid " style="background-image: url(<?php echo $bg_image; ?>">
-        <div class="container">
+        <div class="container position-relative ">
             <div class="row d-none d-lg-flex">
                 <div class="col-9">
 
                 </div>
                 <div class="col-3">
                     <div class="agenda-cita mt-3 ">
-                        <h5 class="green-title ml-1 ">
+                        <h5 class="green-title">
                             <?php echo $first_title ?>
                         </h5>
-                        <div class="phone-icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -54,7 +52,10 @@ $proceso3 = get_field('tercer_proceso');
                     <?php echo $third_title ?>
                 </h3>
             </div>
-
+            <div class="phone-icon d-none d-lg-flex">
+                <!-- <i class="fa-solid fa-phone"></i> -->
+                <img class="image-wa" src="<?php echo get_template_directory_uri(); ?>/assets/images/2x/wa-ico@2x.png"/>
+            </div>
 
         </div>
     </div>
@@ -62,7 +63,7 @@ $proceso3 = get_field('tercer_proceso');
 
 
 
-<section id="gastroInf-section">
+<section id="gastroInf-section" class="mb-4">
     <div class="container">
         <div class="row mt-lg-3">
             <div class="col-md-6 col-12 mx-auto">
@@ -88,7 +89,7 @@ $proceso3 = get_field('tercer_proceso');
 
 
 
-<section id="procedimientos-dropdown">
+<section class="mb-4" id="procedimientos-dropdown">
 
     <!-- doesnt use containers cause container-fluid has some sorf of margin x -->
 
@@ -204,7 +205,7 @@ $proceso3 = get_field('tercer_proceso');
 </section>
 
 
-<section id="form-section"
+<section class="mb-4" id="form-section"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/2x/bg4.png');">
     <div class="container">
         <div class="row">

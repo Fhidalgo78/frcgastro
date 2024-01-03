@@ -16,7 +16,7 @@ $footer = get_field('footer', 'option');
                 <div class="info d-flex flex-column">
                     <h5><?php echo $footer['address'] ?></h5>
                     <a href="tel:<?php echo $footer['phone_link'] ?>"><i class="fas fa-phone"></i><?php echo $footer['phone'] ?></a>
-                    <a href="mailto:<?php echo $footer['phone'] ?>"><i class="fas fa-envelope"></i> <?php echo $footer['email'] ?></a>
+                    <a href="mailto:<?php echo $footer['email'] ?>"><i class="fas fa-envelope"></i> <?php echo $footer['email'] ?></a>
                 </div>
             </div>
             <div class="col-md-12 col-lg-6 justify-content-center align-items-center d-none d-md-flex">

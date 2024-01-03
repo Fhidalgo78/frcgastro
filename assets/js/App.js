@@ -21,11 +21,11 @@ jQuery('input.wpcf7-submit[type="submit"]').click(function() {
     return true;
 });
 
-var wpcf7Elm = document.querySelector('.wpcf7');
-wpcf7Elm.addEventListener('wpcf7submit', function(event) {
-    jQuery(':input[type="submit"]').attr('value', "Enviar");
-    disableSubmit = false;
-}, false);
+// var wpcf7Elm = document.querySelector('.wpcf7');
+// wpcf7Elm.addEventListener('wpcf7submit', function(event) {
+//     jQuery(':input[type="submit"]').attr('value', "Enviar");
+//     disableSubmit = false;
+// }, false);
 
 
 
@@ -35,6 +35,7 @@ wpcf7Elm.addEventListener('wpcf7submit', function(event) {
         $(window).on("scroll", function() {
             if($(window).scrollTop() > 50) {
                 $("#masthead").addClass("bgactive");
+                
             } else {
                 //remove the background property so it comes transparent again (defined in your css)
                $("#masthead").removeClass("bgactive");
@@ -44,6 +45,7 @@ wpcf7Elm.addEventListener('wpcf7submit', function(event) {
 		
         $( ".navbar-toggler" ).click(function() {
             $('#main-menu-wrapper').toggleClass('open');
+            console.log('ola')
         });
         $( ".js-close" ).click(function() {
             $('#main-menu-wrapper').toggleClass('open');
