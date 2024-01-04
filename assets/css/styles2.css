@@ -249,6 +249,10 @@ button h5 {
     margin-bottom: 26px;
 }
 
+.socials{
+    width: 35px;
+}
+
 @media (min-width: 1024px) {
 
     #masthead {
@@ -336,6 +340,9 @@ button h5 {
     .title {
         height: 40vh;
     }
+    #bout-us-banner .bg-home-banner {
+        background-size: 100% 100%;
+    }
 }
 
 /* 
@@ -348,4 +355,13 @@ button h5 {
     ##Screen = B/w 320px to 479px
   */
 
-@media (min-width: 320px) and (max-width: 767px) {}
+@media (min-width: 320px) and (max-width: 767px) {
+    .icon-dropover {
+        max-width: 69px;
+        max-height: 44px;
+    }
+    #bout-us-banner .bg-home-banner {
+        background-size: 100% 100%;
+    }
+  
+}

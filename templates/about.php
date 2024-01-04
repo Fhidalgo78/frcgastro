@@ -1,25 +1,29 @@
 <?php get_header();
 /* Template Name: about us */
 $info_doc = get_field('info_doc');
+$footer = get_field('footer', 'option');
 ?>
 
 <section id="bout-us-banner">
-    <div class="bg-home-banner container-fluid " style="background-image: url(<?php echo $info_doc['bg-image']; ?>">
-        <div class="container">
+    <div class="bg-home-banner container-fluid "
+        style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)),url(<?php echo $info_doc['bg-image']; ?>">
+        <div class="container position-relative ">
             <div class="row d-none d-lg-flex">
                 <div class="col-9">
 
                 </div>
                 <div class="col-3">
-                    <div class="agenda-cita mt-3 ">
-                        <h5 class="green-title ml-1 ">
-                            Agenta tu cita
-                        </h5>
-                        <div class="phone-icon">
-                            <i class="fa-solid fa-phone"></i>
+                    <a href="tel:<?php echo $footer['phone_link'] ?>">
+                        <div class="agenda-cita mt-3 ">
+                            <h5 class="green-title">Agenda tu cita</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
+            </div>
+            <div class="phone-icon d-none d-lg-flex">
+                <!-- <i class="fa-solid fa-phone"></i> -->
+                <img class="image-wa"
+                    src="<?php echo get_template_directory_uri(); ?>/assets/images/2x/wa-ico@2x.png" />
             </div>
         </div>
     </div>
@@ -36,8 +40,10 @@ $info_doc = get_field('info_doc');
                 <?php echo $info_doc['preview-info']; ?>
             </p>
 
-            <a href="<?php echo $info_doc['cv-link']; ?>"><div class="cv-button">DRA Fabiola Rios de Choudens
-                    CV</div></a>
+            <a href="<?php echo $info_doc['cv-link']; ?>">
+                <div class="cv-button">DRA Fabiola Rios de Choudens
+                    CV</div>
+            </a>
         </div>
     </div>
 </section>

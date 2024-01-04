@@ -6,30 +6,29 @@ $second_title = get_field('second_title');
 $third_title = get_field('third_title');
 
 
-$section1 = get_field('primera_seccion');
-$section2 = get_field('segunda_seccion');
-$section3 = get_field('tercera_seccion');
-
+$sections = get_field('secciones');
+$section1 = $sections['seccion1'];
+$section2 = $sections['seccion2'];
+$section3 = $sections['seccion3'];
+$footer = get_field('footer', 'option');
 ?>
 
 
 
 <section id="balon-banner">
-    <div class="bg-home-banner container-fluid " style="background-image: url(<?php echo $bg_image; ?>">
-        <div class="container">
+    <div class="bg-home-banner container-fluid "
+        style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)),url(<?php echo $bg_image; ?>">
+        <div class="container position-relative ">
             <div class="row d-none d-lg-flex">
                 <div class="col-9">
 
                 </div>
                 <div class="col-3">
-                    <div class="agenda-cita mt-3 ">
-                        <h5 class="green-title ml-1 ">
-                            Agenda tu cita
-                        </h5>
-                        <div class="phone-icon">
-                            <i class="fa-solid fa-phone"></i>
+                    <a href="tel:<?php echo $footer['phone_link'] ?>">
+                        <div class="agenda-cita mt-3 ">
+                            <h5 class="green-title">Agenda tu cita</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -53,7 +52,13 @@ $section3 = get_field('tercera_seccion');
                     <?php echo $third_title ?>
                 </h3>
             </div>
-
+            <div class="phone-icon d-none d-lg-flex">
+                <!-- <i class="fa-solid fa-phone"></i> -->
+                <a href="tel:<?php echo $footer['phone_link'] ?>">
+                    <img class="image-wa"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/2x/wa-ico@2x.png" />
+                </a>
+            </div>
 
         </div>
     </div>
@@ -65,11 +70,13 @@ $section3 = get_field('tercera_seccion');
     <div class="container">
         <div class="row">
             <div class="col-lg-12 secondtitle my-4 text-center">
-                <?php echo $section2['maintitle']; ?>
+                <h2>
+                    <?php echo $section1['maintitle']; ?>
+                </h2>
             </div>
         </div>
         <div class="row mb-2">
-            <?php foreach ($section2['beneficios'] as $i => $ben): ?>
+            <?php foreach ($section1['benefits'] as $i => $ben): ?>
                 <div class="col-md-6 col-lg-3">
                     <div class="feature-box">
                         <div class="feature-title">
@@ -90,10 +97,12 @@ $section3 = get_field('tercera_seccion');
                 style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/2x/bg3.png');">
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex justify-content-center align-items-center text-center">
-                        <?php echo $section2['segundo_titulo'] ?>
+                        <h3>
+                            <?php echo $section2['titulo'] ?>
+                        </h3>
                     </div>
                     <div class="col-12 col-md-6">
-                        <?php foreach ($section2['steps'] as $i => $step): ?>
+                        <?php foreach ($section2['contenido'] as $i => $step): ?>
                             <div class="step">
                                 <span>
                                     <?php echo $step['numero'] ?>
@@ -108,7 +117,9 @@ $section3 = get_field('tercera_seccion');
             </div>
         </div>
         <div class="row text-center justify-content-center steps-last-title">
-            <?php echo $section2['ultimo_titulo'] ?>
+            <h2>
+                <?php echo $section3['maintitle'] ?>
+            </h2>
         </div>
     </div>
 </section>

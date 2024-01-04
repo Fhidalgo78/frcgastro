@@ -13,19 +13,23 @@ $middle_banner = get_field('middle_banner');
 
 $section2 = get_field('beneficios');
 $benefits = get_field('maintitle');
+$footer = get_field('footer', 'option');
 ?>
 
 <section id="home-banner" class="mb-2">
-    <div class="bg-home-banner container-fluid " style="background-image: url(<?php echo $bg_image; ?>">
+    <div class="bg-home-banner container-fluid "
+        style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url(<?php echo $bg_image; ?>">
         <div class="container position-relative">
             <div class="row d-none d-lg-flex ">
                 <div class="col-9">
 
                 </div>
                 <div class="col-3">
-                    <div class="agenda-cita mt-3 ">
-                        <h5 class="green-title">Agenda tu cita</h5>
-                    </div>
+                    <a href="tel:<?php echo $footer['phone_link'] ?>">
+                        <div class="agenda-cita mt-3 ">
+                            <h5 class="green-title">Agenda tu cita</h5>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -41,7 +45,9 @@ $benefits = get_field('maintitle');
                         d="m 31.233725,31.233725 c 0,0 61.574343,63.73891 168.766275,63.73891 121.84084,0 168.76627,-63.73891 168.76627,-63.73891" />
 
                     <text font-size="40" fill="#000000" letter-spacing="1" font-family="sans-serif" font-weight="bold">
-                        <textPath xlink:href="#SunCatcherStudio" side="left" startOffset="50"><?php echo $second_title ?></textPath>
+                        <textPath xlink:href="#SunCatcherStudio" side="left" startOffset="50">
+                            <?php echo $second_title ?>
+                        </textPath>
                     </text>
                 </svg>
 
@@ -51,7 +57,10 @@ $benefits = get_field('maintitle');
             </div>
 
             <div class="phone-icon d-none d-lg-flex">
-            <img class="image-wa" src="<?php echo get_template_directory_uri(); ?>/assets/images/2x/wa-ico@2x.png"/>
+                <a href="tel:<?php echo $footer['phone_link'] ?>">
+                    <img class="image-wa"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/2x/wa-ico@2x.png" />
+                </a>
             </div>
 
         </div>
@@ -76,7 +85,10 @@ $benefits = get_field('maintitle');
                     </p>
 
                     <div class="d-flex justify-content-center ">
-                        <button class="green-btn">Ver más</button>
+                        <a
+                            href="<?php echo ($page = get_page_by_path('gastroenterologia')) ? esc_url(get_permalink($page->ID)) : '#'; ?>"><button
+                                class="green-btn">Ver más</button></a>
+
                     </div>
                 </div>
             </div>
@@ -111,7 +123,7 @@ $benefits = get_field('maintitle');
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/2x/bg2.png');">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 info-title blue-title text-center my-2 font-weight-bold" >
+            <div class="col-lg-12 info-title blue-title text-center mb-4 my-2 font-weight-bold">
                 <?php echo $benefits ?>
             </div>
         </div>
@@ -132,8 +144,11 @@ $benefits = get_field('maintitle');
                 </div>
             <?php endforeach; ?>
         </div>
-        <div class="d-flex justify-content-center ">
-            <button class="green-btn">Ver más</button>
+        <div class="d-flex justify-content-center my-5">
+            <a
+                href="<?php echo ($page = get_page_by_path('balon-gastrico')) ? esc_url(get_permalink($page->ID)) : '#'; ?>"><button
+                    class="green-btn">Ver más</button></a>
+
         </div>
     </div>
 </section>
@@ -156,7 +171,10 @@ $benefits = get_field('maintitle');
                     </p>
 
                     <div class="d-flex justify-content-center ">
-                        <button class="green-btn">Conocer a la doctora</button>
+                        <a
+                            href="<?php echo ($page = get_page_by_path('quienes-somos')) ? esc_url(get_permalink($page->ID)) : '#'; ?>"><button
+                                class="green-btn">Conocer a la doctora</button></a>
+
                     </div>
                 </div>
             </div>

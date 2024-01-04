@@ -11,22 +11,24 @@ $info_div = get_field('info_div');
 $proceso1 = get_field('primer_proceso');
 $proceso2 = get_field('segundo_proceso');
 $proceso3 = get_field('tercer_proceso');
+
+$footer = get_field('footer', 'option');
 ?>
 
 <section id="gastro-banner">
-    <div class="bg-home-banner container-fluid " style="background-image: url(<?php echo $bg_image; ?>">
+    <div class="bg-home-banner container-fluid "
+        style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)),url(<?php echo $bg_image; ?>">
         <div class="container position-relative ">
             <div class="row d-none d-lg-flex">
                 <div class="col-9">
 
                 </div>
                 <div class="col-3">
-                    <div class="agenda-cita mt-3 ">
-                        <h5 class="green-title">
-                            <?php echo $first_title ?>
-                        </h5>
-                        
-                    </div>
+                    <a href="tel:<?php echo $footer['phone_link'] ?>">
+                        <div class="agenda-cita mt-3 ">
+                            <h5 class="green-title">Agenda tu cita</h5>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -54,7 +56,10 @@ $proceso3 = get_field('tercer_proceso');
             </div>
             <div class="phone-icon d-none d-lg-flex">
                 <!-- <i class="fa-solid fa-phone"></i> -->
-                <img class="image-wa" src="<?php echo get_template_directory_uri(); ?>/assets/images/2x/wa-ico@2x.png"/>
+                <a href="tel:<?php echo $footer['phone_link'] ?>">
+                    <img class="image-wa"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/2x/wa-ico@2x.png" />
+                </a>
             </div>
 
         </div>
@@ -103,7 +108,7 @@ $proceso3 = get_field('tercer_proceso');
                             <div class="row">
                                 <div class="col-1">
                                     <div class="d-flex justify-content-end ">
-                                        <img class="icon-dropover" src="<?php echo $proceso1['icon'];?>" alt="Icon">
+                                        <img class="icon-dropover" src="<?php echo $proceso1['icon']; ?>" alt="Icon">
                                     </div>
                                 </div>
                                 <div class="col-9">
@@ -140,7 +145,7 @@ $proceso3 = get_field('tercer_proceso');
                             <div class="row">
                                 <div class="col-1">
                                     <div class="d-flex justify-content-end ">
-                                        <img class="icon-dropover" src="<?php echo $proceso2['icon'];?>" alt="Icon">
+                                        <img class="icon-dropover" src="<?php echo $proceso2['icon']; ?>" alt="Icon">
                                     </div>
                                 </div>
                                 <div class="col-9">
@@ -160,7 +165,7 @@ $proceso3 = get_field('tercer_proceso');
                 <div class="card-body">
                     <div class="container">
                         <div class="row">
-                            <?php echo $proceso2['info'];?>
+                            <?php echo $proceso2['info']; ?>
                         </div>
                     </div>
                 </div>
@@ -175,7 +180,7 @@ $proceso3 = get_field('tercer_proceso');
                             <div class="row">
                                 <div class="col-1">
                                     <div class="d-flex justify-content-end ">
-                                        <img class="icon-dropover" src="<?php echo $proceso3['icon'];?>" alt="Icon">
+                                        <img class="icon-dropover" src="<?php echo $proceso3['icon']; ?>" alt="Icon">
                                     </div>
                                 </div>
                                 <div class="col-9">
